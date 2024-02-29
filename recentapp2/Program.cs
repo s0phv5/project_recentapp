@@ -6,13 +6,11 @@ class RecentlyOpenedExecutables
 {
     static void Main()
     {
-        // Add more directories to search
         string[] searchDirectories = {
             Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
             Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86),
             Environment.GetFolderPath(Environment.SpecialFolder.Desktop),
             GetDownloadsPath(),
-            // Add more directories as needed
         };
 
         try
